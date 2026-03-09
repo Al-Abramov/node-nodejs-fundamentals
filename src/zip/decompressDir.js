@@ -37,7 +37,7 @@ const decompressDir = async () => {
     if (!block.trim()) continue;
 
     const [fileLine, ...contentLines] = block.split('\n');
-      console.log(fileLine)
+
     const relativePath = fileLine.replace('FILE:', '').trim();
     const content = contentLines.join('\n');
 
